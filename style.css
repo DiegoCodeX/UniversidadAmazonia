@@ -49,41 +49,41 @@
 .navbar-brand {
     font-weight: bold;
     font-size: 1.5rem;
-    color: #FFF;
+    color: white;
     transition: color 0.3s ease-in-out;
 }
 
 .navbar-brand:hover {
-    color: #F8EFBA;
+    color: white;
 }
 
 .btn-outline-light {
-    border: 1px solid #FFF;
+    border: 1px solid white;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .btn-outline-light:hover {
-    background-color: #FFF;
-    color: #0A3D62;
+    background-color: white;
+    color: blue;
 }
 
 .dropdown-menu-dark {
-    background-color: #34495E;
+    background-color: rgb(43, 43, 99);
     border: none;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .dropdown-item {
-    color: #FFF;
+    color: white;
     transition: background-color 0.3s ease;
 }
 
 .dropdown-item:hover {
-    background-color: #1B9CFC;
+    background-color: rgb(50, 50, 161);
 }
 
 .dropdown-header {
-    color: #F8EFBA;
+    color: white;
     font-weight: bold;
 }
 
@@ -108,14 +108,14 @@ p {
 
 
 .seccion-servicios {
-    background-color: #e0f2f1;
+    background-color: rgb(222, 222, 222);
     padding: 30px 10px;
 }
 
 
 footer {
-    background-color: #004d40;
-    color: #fff;
+    background-color: green , ;
+    color: white;
     text-align: center;
     padding: 20px;
 }
@@ -131,7 +131,7 @@ footer {
 }
 
 .info-section a:hover {
-    color: #004d40;
+    color: rgb(18, 41, 18);
 }
 
 
