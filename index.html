@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Video en HTML</title>
+    <title>UniAmazonia</title>
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-    <h1>TEST</h1>
+
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+     
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom shadow">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">UniAmazonia</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -21,136 +22,259 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
+                    <ul class="navbar-nav ms-auto">
+                       
+                        <li class="nav-item dropdown mx-2">
+                            <button class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Universidad
                             </button>
                             <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li>
+                                    <h6 class="dropdown-header">Universidad</h6>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Misión y Visión</a></li>
+                                <li><a class="dropdown-item" href="#">Historia</a></li>
+                                <li><a class="dropdown-item" href="#">Normatividad</a></li>
+                                <li><a class="dropdown-item" href="#">Admisiones</a></li>
+                                <li><a class="dropdown-item" href="#">Acreditación</a></li>
                             </ul>
-
-                            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
+                        </li>
+                   
+                        <li class="nav-item dropdown mx-2">
+                            <button class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Programas
                             </button>
                             <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li>
+                                    <h6 class="dropdown-header">Facultades</h6>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Ciencias Agropecuarias</a></li>
+                                <li><a class="dropdown-item" href="#">Ciencias Básicas</a></li>
+                                <li><a class="dropdown-item" href="#">Ciencias Contables</a></li>
+                                <li><a class="dropdown-item" href="#">Ingeniería</a></li>
                             </ul>
-                            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
+                        </li>
+                        
+                        <li class="nav-item dropdown mx-2">
+                            <button class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                Sedes
+                                Accesos
                             </button>
                             <ul class="dropdown-menu dropdown-menu-dark">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li>
+                                    <h6 class="dropdown-header">Accesos</h6>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Plataforma Chairá</a></li>
+                                <li><a class="dropdown-item" href="#">Correo Institucional</a></li>
                             </ul>
-                            <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Accsos 
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
 
+
+        
         <div class="video-container">
-            <video id="miVideo" autoplay loop muted>
-                <source src="./Video recortado.mp4" type="video/mp4">
+            <video id="miVideo" autoplay loop muted playsinline>
+                <source src="./Video%20recortado.mp4" type="video/mp4">
+
             </video>
         </div>
 
-        <div class="container-fluid mt-0"> <!-- Contenedor sin margen superior -->
-            <div class="row mt-0 justify-content-center"> 
-                <div class="col-lg-4 col-md-6 col-12 p-3 text-white" id="uno">
-                    <img id="imgamazonia" src="./universidad de la amazonia.jpg" alt="Universidad de la Amazonia">
-                    <p id="textouno">
-                        La Universidad de la Amazonia es una institución pública en Florencia, Caquetá, enfocada en el
-                        desarrollo sostenible de la región amazónica. Ofrece programas de pregrado y posgrado en diversas
-                        áreas, con énfasis en investigación y tecnología.
-                    </p>
+
+
+        <div>
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
                 </div>
-                <div class="col-lg-4 col-md-6 col-12 p-3" id="dos">
-                    <h2>Carreras y Facultades</h2>
-                    <ul>
-                        <li><strong>Ciencias Agropecuarias:</strong> Ingeniería Agroecológica, Zootecnia, Ingeniería
-                            Forestal</li>
-                        <li><strong>Ciencias Básicas:</strong> Biología, Química</li>
-                        <li><strong>Ciencias Humanas y Educación:</strong> Lic. Lengua Castellana e Inglés, Psicología</li>
-                        <li><strong>Ciencias Económicas:</strong> Administración de Empresas, Contaduría Pública</li>
-                        <li><strong>Ingeniería:</strong> Ingeniería de Sistemas, Ingeniería Agroindustrial</li>
-                        <li><strong>Derecho y Ciencias Políticas:</strong> Derecho</li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12 p-3 text-white" id="tres">
-                    <h2>Contacto y Noticias</h2>
-                    <div class="contact-info">
-                        <p>📍 Florencia, Caquetá, Colombia</p>
-                        <p>📞 (+57) 608 4340048</p>
-                        <p>📧 info@uniamazonia.edu.co</p>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./universidad de la amazonia.jpg" class="d-block w-100" alt="...">
                     </div>
-                    <h3>Últimas Noticias</h3>
-                    <ul class="news">
-                        <li>📌 Convocatoria abierta para becas de investigación 2025.</li>
-                        <li>📌 Nueva sede para la Facultad de Ingeniería en 2024.</li>
-                        <li>📌 Congreso de Medio Ambiente y Desarrollo.</li>
-                    </ul>
+                    <div class="carousel-item">
+                        <img src="./SedeCenttro.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./social.jpg" class="d-block w-100" alt="...">
+                    </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
 
 
-        <div>
-            <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <ul class="nav nav-pills">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#scrollspyHeading1">First</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#scrollspyHeading2">Second</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
-                      <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </nav>
-              <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
-                <h4 id="scrollspyHeading1">First heading</h4>
-                <p>...</p>
-                <h4 id="scrollspyHeading2">Second heading</h4>
-                <p>...</p>
-                <h4 id="scrollspyHeading3">Third heading</h4>
-                <p>...</p>
-                <h4 id="scrollspyHeading4">Fourth heading</h4>
-                <p>...</p>
-                <h4 id="scrollspyHeading5">Fifth heading</h4>
-                <p>...</p>
-              </div>
-            
-        </div>
-        
-    </header>
+        <section class="seccion-servicios">
+            <div class="container">
+                <h2 class="text-center">Nuestros Servicios</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="">Admisiones</a>
+                        <p>Conoce el proceso de admisión para nuestros programas académicos.</p>
+                        <img id="admisiones" src="./admisiones.png" alt="">
+                    </div>
+                    <div class="col-md-4">
+                        <a href="">Investigación</a>
+                        <p>Fomentamos la investigación para el desarrollo regional.</p>
+                        <img id="invesitigaciones" src="./invesitigaciones.png" alt="">
+                    </div>
+                    <div class="col-md-4">
+                        <a href="">Vida Universitaria</a>
+                        <p>Descubre las actividades y servicios para los estudiantes.</p>
+                        <img id="Vidauni" src="./vidauniversitaria.jpg" alt="">
+                    </div>
+                </div>
+            </div>
 
-    <script src="./js/bootstrap.bundle.js"></script>
+        </section>
+
+
+
+
+
+
+        <section class="container my-5">
+            <h2 style="color: #fff;" class="text-center mb-4">ÚLTIMAS NOTICIAS</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img id="Eucaristia" src="./eucaristia.jpg" class="card-img-top" alt="Noticia 1">
+                        <div class="card-body">
+                            <h5 class="card-title">EUCARISTÍA DE MIÉRCOLES DE CENIZA</h5>
+                            <p class="card-text">La Universidad de la Amazonia invita a la comunidad académica a
+                                participar en la Eucaristía de...</p>
+                            <a href="#" class="text-success">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img id="recolecta" src="./recolecta.jpg" class="card-img-top" alt="Noticia 2">
+                        <div class="card-body">
+                            <h5 class="card-title">UNIVERSIDAD DE LA AMAZONIA RECOLECTA ESPERANZA</h5>
+                            <p class="card-text">Únete a la gran jornada de recolección de tapas plásticas y ayudemos a
+                                los niños con cáncer...</p>
+                            <a href="#" class="text-success">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 shadow-sm">
+                        <img id="natacion" src="./natacion.jpg" class="card-img-top" alt="Noticia 3">
+                        <div class="card-body">
+                            <h5 class="card-title">NATACIÓN UNIAMAZONIA</h5>
+                            <p class="card-text">¡Nada hacia tus metas! Consulta los horarios de entrenamiento de
+                                Natación y sumérgete con...</p>
+                            <a href="#" class="text-success">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-success">VER TODAS LAS NOTICIAS</a>
+            </div>
+        </section>
+
+        <section class="info-section" style="background-color:rgb(212, 212, 212); padding: 30px 0;">
+            <div class="container">
+                <div class="row text-center text-md-start">
+                    <div class="col-12 col-md-2 mb-3">
+                        <h5 style="color: red;">Atención al ciudadano</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" style="color: green;">PQRSD-D</a></li>
+                            <li><a href="#" style="color: green;">Glosario</a></li>
+                            <li><a href="#" style="color: green;">Preguntas Frecuentes</a></li>
+                            <li><a href="#" style="color: green;">Tramites Uniamazonia</a></li>
+                            <li><a href="#" style="color: green;">Política de Privacidad</a></li>
+                            <li><a href="#" style="color: green;">Política Editorial</a></li>
+                            <li><a href="#" style="color: green;">Mapa del Sitio</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-2 mb-3">
+                        <h5 style="color: red;">Aplicaciones Web</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" style="color: green;">Inscripciones</a></li>
+                            <li><a href="#" style="color: green;">Liquidación</a></li>
+                            <li><a href="#" style="color: green;">Catálogo en Línea (OPAC)</a></li>
+                            <li><a href="#" style="color: green;">SIGEPI</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-2 mb-3">
+                        <h5 style="color: red;">Información institucional</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" style="color: green;">Estatuto General</a></li>
+                            <li><a href="#" style="color: green;">Estatuto Docente</a></li>
+                            <li><a href="#" style="color: green;">Estatuto Estudiantil</a></li>
+                            <li><a href="#" style="color: green;">Estatuto de Contratación</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-2 mb-3">
+                        <h5 style="color: red;">Servicios</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" style="color: green;">Consultorio Jurídico y Centro de Conciliación Virtual</a></li>
+                            <li><a href="#" style="color: green;">Biblioteca</a></li>
+                            <li><a href="#" style="color: green;">Editorial Uniamazonia</a></li>
+                            <li><a href="#" style="color: green;">Consultorio Contable Tributario</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-2 mb-3">
+                        <h5 style="color: red;">Descubre la Universidads</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" style="color: green;">Marco Jurídico</a></li>
+                            <li><a href="#" style="color: green;">Rendición de Cuentas</a></li>
+                            <li><a href="#" style="color: green;">Plan de Desarrollo PDI</a></li>
+                            <li><a href="#" style="color: green;">Transparencia y Acceso a la Información</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="affiliates-section" style="background-color: #f8f8f8; padding: 20px 0; text-align: center;">
+            <div class="container">
+                <div class="row justify-content-center mb-4">
+                    <div class="col-12 col-md-10">
+                        <div class="d-flex flex-wrap justify-content-center">
+                            <img style="width: 70px; height: 70px;" src="./logo1.png" alt="Logo 1" class="mx-2 my-2">
+                            <img style="width: 70px; height: 70px;" src="./logo2.png" alt="Logo 2" class="mx-2 my-2">
+                            <img style="width: 70px; height: 70px;" src="./logo3.png" alt="Logo 3" class="mx-2 my-2">
+                            <img style="width: 70px; height: 70px;" src="./logo4.png" alt="Logo 4" class="mx-2 my-2">
+                            <img style="width: 70px; height: 70px;" src="./logo5.png" alt="Logo 5" class="mx-2 my-2">
+                            <img style="width: 350px; height: 70px;" src="./logo6.jpg" alt="Logo 6" class="mx-2 my-2">
+                            <img style="width: 70px; height: 70px;" src="./logo7.png" alt="Logo 7" class="mx-2 my-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+        <footer class="text-center p-4" style="background-color: rgb(1, 43, 1); color:white;">
+            <p>&copy; 2025 Universidad de la Amazonia. Todos los derechos reservados.</p>
+        </footer>
+
+
+        <script src="./js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
